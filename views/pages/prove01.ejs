@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <% include ../includes/header.ejs %>
+</head>
+
+<body>
+  <% include ../includes/nav.ejs %>
+<div class="jumbotron text-center">
+  <div class="container">
+    <h1><%= title %></h1>
+    <p>Please fill out the form below</p>
+    <form class="ponder01form" action="/prove01" method="POST">
+        <div>
+            <label for="first_name">First Name:</label>
+            <input type="text" name="first_name">
+        </div>
+        <div>
+            <label for="last_name">Last Name:</label>
+            <input type="text" name="last_name">
+        </div>
+        <div>
+            <label for="major">Major:</label>
+            <input type="text" name="major">
+        </div>
+        <br>
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+  </div>
+</div>
+<div class="container"></div>
+</body>
+</html>

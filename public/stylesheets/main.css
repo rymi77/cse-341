@@ -41,3 +41,18 @@
   width: 5rem;
   height: 5rem;
 }
+
+label, input{
+  display: block;
+}
+.ponder01form{
+  color: black;
+  text-align: left;
+}
+label{
+  color: white;
+}
+
+.res01{
+  text-align: left;
+}
