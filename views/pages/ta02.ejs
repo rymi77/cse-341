@@ -10,6 +10,20 @@
   <div class="container">
     <h1><%= title %></h1>
     <p>This is the placeholder for Team Activity 02</p>
+    <form class="ponder01form" action="/ta02/addUser" method="POST">
+      <div>
+          <label for="username">Username:</label>
+          <input type="text" name="username">
+      </div>
+      <div>
+          <label for="password">Password:</label>
+          <input type="text" name="password">
+      </div>
+      <br>
+      <div>
+          <button type="submit">Add User</button>
+      </div>
+  </form>
   </div>
 </div>
 <div class="container">

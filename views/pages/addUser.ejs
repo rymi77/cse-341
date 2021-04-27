@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <% include ../includes/header.ejs %>
+</head>
+
+<body>
+  <% include ../includes/nav.ejs %>
+<div class="jumbotron text-center">
+  <div class="container">
+    <h1><%= title %></h1>
+    <p>A list of all usersnames</p>
+    <div class="userlist">
+      <% if (users.length > 0) { %>
+        <ul>
+          <% for (let user of users) { %>
+            <li><%= user.username %></li>
+          <% } %>
+        </ul>
+      <% } %>
+    </div>
+    <form method="GET" action="/ta02">
+      <button type="submit">Add Another User</button>
+    </form>
+    <br>
+    <form class="removeUser" method="POST" action="/ta02/removeUser">
+      <div>
+        <label for="username">Username:</label>
+        <input type="text" name="username">
+      </div>
+      <br>
+      <button type="submit">Remove User</button>
+    </form>
+  </div>
+</div>
+<div class="container">
+</div>
+
+
+</body>
+</html>

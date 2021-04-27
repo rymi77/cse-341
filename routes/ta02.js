@@ -3,11 +3,40 @@
 const express = require('express');
 const router = express.Router();
 
+const userlist = [];
+
 router.get('/',(req, res, next) => {
-    res.render('pages', { 
+    res.render('pages/ta02', { 
         title: 'Team Activity 02', 
         path: '/ta02', // For pug, EJS 
-        activeTA03: true, // For HBS
+        activeTA02: true, // For HBS
+        contentCSS: true, // For HBS
+    });
+});
+
+router.post('/addUser',(req, res, next) => {
+    userlist.push({username: req.body.username});
+    res.render('pages/addUser', { 
+        title: 'User List', 
+        users: userlist,
+        path: '/addUser', // For pug, EJS 
+        activeTA02: true, // For HBS
+        contentCSS: true, // For HBS
+    });
+});
+
+router.post('/removeUser',(req, res, next) => {
+    const removeUser = req.body.username;
+    for(var i = userlist.length; i--; ){
+        if (userlist[i].username == removeUser){
+            userlist.splice(i, 1);
+        }
+    }
+    res.render('pages/addUser', { 
+        title: 'User List', 
+        users: userlist,
+        path: '/addUser', // For pug, EJS 
+        activeTA02: true, // For HBS
         contentCSS: true, // For HBS
     });
 });

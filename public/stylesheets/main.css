@@ -45,6 +45,9 @@
 label, input{
   display: block;
 }
+input{
+  color: black;
+}
 .ponder01form{
   color: black;
   text-align: left;
@@ -55,4 +58,17 @@ label{
 
 .res01{
   text-align: left;
+}
+
+.container button{
+  color: black;
+}
+.userlist ul{
+  list-style-type: none;
+  margin-left: 0%;
+  padding-left: 0%;
+}
+
+.removeUser input{
+  margin: 0 auto;
 }
