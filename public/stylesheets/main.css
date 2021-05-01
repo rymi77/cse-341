@@ -72,3 +72,13 @@ label{
 .removeUser input{
   margin: 0 auto;
 }
+
+.booklist ul{
+  list-style-type: none;
+  margin-left: 0%;
+  padding-left: 0%;
+}
+
+.removeBook input{
+  margin: 0 auto;
+}

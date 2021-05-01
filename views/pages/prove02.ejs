@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <% include ../includes/header.ejs %>
+</head>
+
+<body>
+  <% include ../includes/nav.ejs %>
+<div class="jumbotron text-center">
+  <div class="container">
+    <h1><%= title %></h1>
+    <p>This is the placeholder for Ponder 02</p>
+    <form class="ponder01form" action="/prove02/addBook" method="POST">
+      <div>
+          <label for="book">Book:</label>
+          <input type="text" name="book">
+      </div>
+      <div>
+          <label for="summary">Summary:</label>
+          <textarea name="summary"></textarea>
+      </div>
+      <br>
+      <div>
+          <button type="submit">Add Book</button>
+      </div>
+  </form>
+  </div>
+</div>
+<div class="container">
+  
+</div>
+
+
+</body>
+</html>

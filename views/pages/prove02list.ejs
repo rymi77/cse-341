@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <% include ../includes/header.ejs %>
+</head>
+
+<body>
+  <% include ../includes/nav.ejs %>
+<div class="jumbotron text-center">
+  <div class="container">
+    <h1><%= title %></h1>
+    <p>A list of all books</p>
+    <div class="booklist">
+      <% if (books.length > 0) { %>
+        <ul>
+          <% for (let book of books) { %>
+            <li>
+                <h3><%= book.title %></h3>
+                <%= book.summary %>
+            </li>
+          <% } %>
+        </ul>
+      <% } %>
+    </div>
+    <br>
+    <form method="GET" action="/prove02">
+      <button type="submit">Add Another Book</button>
+    </form>
+    <br>
+    <form class="removeUser" method="POST" action="/prove02/removeBook">
+      <div>
+        <label for="book">Book Title:</label>
+        <input type="text" name="book">
+      </div>
+      <br>
+      <button type="submit">Remove Book</button>
+    </form>
+  </div>
+</div>
+<div class="container">
+</div>
+
+
+</body>
+</html>
