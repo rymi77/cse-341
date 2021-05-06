@@ -9,7 +9,25 @@
 <div class="jumbotron text-center">
   <div class="container">
     <h1><%= title %></h1>
-    <p>This is the placeholder for Team Activity 03</p>
+    <form action="/ta03/search" method="POST">
+      <label for="search">Search Tags</label>
+      <input type="text" name="search">
+      <button type="submit">Search</button>
+    </form>
+    <%for (e of data){ %>
+      <% let found = false; if(tag){ %>
+        <% for (t of e.tags) { %>
+          <% if (t == tag) {found = true} } }%>
+          <% if (!tag || found) {%>
+          <div class="card">
+            <h3><%= e.name %></h3>
+            <img src="<%= e.imageUrl %>">
+            <p>Price: $<%= e.price %></p>
+            <p>Description: <%= e.description %></p>
+          </div>
+          <% } %>
+    <% } %>
+
   </div>
 </div>
 <div class="container">
