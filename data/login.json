@@ -1,0 +1,65 @@
+[
+    {
+        "email": "admin1@fake.com",
+        "username": "admin1",
+        "password": "password1",
+        "shippingAddress": "1234 W 2nd, Lala Land, Timbuktu",
+        "Admin": "true"
+    },
+    {
+        "email": "admin2@fake.com",
+        "username": "admin2",
+        "password": "password2",
+        "shippingAddress": "1234 W 2nd, Lala Land, Timbuktu",
+        "Admin": "true"
+    },
+    {
+        "email": "admin3@fake.com",
+        "username": "admin3",
+        "password": "password3",
+        "shippingAddress": "1234 W 2nd, Lala Land, Timbuktu",
+        "Admin": "true"
+    },
+    {
+        "email": "user1@fake.com",
+        "username": "user1",
+        "password": "userPassword1",
+        "shippingAddress": "1234 W 2nd, Lala Land, Timbuktu",
+        "Admin": "true"
+    },
+    {
+        "email": "user2@fake.com",
+        "username": "user2",
+        "password": "userPassword2",
+        "shippingAddress": "1234 W 2nd, Lala Land, Timbuktu",
+        "Admin": "true"
+    },
+    {
+        "email": "user3@fake.com",
+        "username": "user3",
+        "password": "userPassword3",
+        "shippingAddress": "1234 W 2nd, Lala Land, Timbuktu",
+        "Admin": "true"
+    },
+    {
+        "email": "user4@fake.com",
+        "username": "user4",
+        "password": "userPassword4",
+        "shippingAddress": "1234 W 2nd, Lala Land, Timbuktu",
+        "Admin": "true"
+    },
+    {
+        "email": "user5@fake.com",
+        "username": "user5",
+        "password": "userPassword5",
+        "shippingAddress": "1234 W 2nd, Lala Land, Timbuktu",
+        "Admin": "true"
+    },
+    {
+        "email": "user6@fake.com",
+        "username": "user6",
+        "password": "userPassword6",
+        "shippingAddress": "1234 W 2nd, Lala Land, Timbuktu",
+        "Admin": "true"
+    }
+]

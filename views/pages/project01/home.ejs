@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <% include ../../includes/header.ejs %>
+</head>
+
+<body>
+  <% include ../../includes/project01nav.ejs %>
+
+  <div class="jumbotron text-center">
+    <div class="container">
+      <h1><%= title %></h1>
+      <%for (e of data){ %>
+        <div class="card">
+          <h3><%= e.name %></h3>
+          <img src="<%= e.imageUrl %>">
+          <p>Price: $<%= e.price %></p>
+          <p>Summary: <%= e.summary %></p>
+        </div>
+      <% } %>
+    </div>
+  </div>
+  <div class="container">
+    
+  </div>
+</body>
+</html>

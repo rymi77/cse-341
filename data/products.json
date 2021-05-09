@@ -1,0 +1,146 @@
+[
+    {
+        "category": "i-phone",
+        "imageUrl": "https://i5.walmartimages.com/asr/eb34b1ea-483a-4632-98ae-4a8ccd058043.642fd6cf72be51d986e800c21872c57d.jpeg?odnWidth=undefined&odnHeight=undefined&odnBg=ffffff",
+        "price": 949.99,
+        "name": "iPhone 12, 128GB",
+        "summary": "iPhone 12. 5G to download movies on the fly and stream high-quality video.",
+        "description": "iPhone 12. 5G to download movies on the fly and stream high-quality video. Beautifully bright 6.1-inch Super Retina XDR display. Ceramic Shield with 4x better drop performance. Incredible low-light photography with Night mode on all cameras. Cinema-grade Dolby Vision video recording, editing, and playback. Powerful A14 Bionic chip. And new MagSafe accessories for easy attach and faster wireless charging. Let the fun begin."
+    },
+    {
+        "category": "i-phone",
+        "imageUrl": "https://i5.walmartimages.com/asr/29edeb5a-5d94-445c-9ddf-10c8826c7f2a.843bff00ec123e4da417bf5e104b3476.jpeg?odnWidth=undefined&odnHeight=undefined&odnBg=ffffff",
+        "price": 999.99,
+        "name": "iPhone 12 Pro, 128GB",
+        "summary": "iPhone 12 Pro. 5G to download huge files on the go and stream HDR video",
+        "description": "iPhone 12 Pro. 5G to download huge files on the go and stream HDR video. Beautifully bright 6.1-inch Super Retina XDR display. Ceramic Shield with 4x better drop performance. Incredible low-light photography with a new Pro camera system, and 4x optical zoom range. Cinema-grade Dolby Vision video recording, editing, and playback. Night mode portraits and next-level AR experiences with the LiDAR Scanner. Powerful A14 Bionic chip. And new MagSafe accessories for easy attach and faster wireless charging. For infinitely spectacular possibilities.        "
+    },
+    {
+      "category": "i-phone",
+      "imageUrl": "https://i5.walmartimages.com/asr/eea59ef4-4f1b-475a-8389-11e08e2c0345_2.f889569839816ae694a4ab6475369fbc.png?odnWidth=undefined&odnHeight=undefined&odnBg=ffffff",
+      "price": 599.00,
+      "name": "iPhone 11, 64GB",
+      "summary": "Take it to 11. Just the right amount of everything. Colorful. Powerful. Essential.",
+      "description": "Take it to 11. Just the right amount of everything. Colorful. Powerful. Essential. See the whole picture with Ultra Wide. iPhone 11. An essential upgrade Shoot 4K videos, beautiful portraits, and sweeping landscapes with the all-new dual-camera system. Capture your best low-light photos with Night mode. See true-to-life color in your photos, videos, and games on the 6.1-inch Liquid Retina display. Experience unprecedented performance with A13 Bionic for gaming, augmented reality (AR), and photography. Do more and power less with all-day battery life and worry less with water resistance up to 2 meters for 30 minutes.6.1-inch Liquid Retina HD LCD display Water and dust resistant (2 meters for up to 30 minutes, IP68) Dual-camera system with 12MP Ultra Wide and Wide cameras; Night mode, Portrait mode, and 4K video up to 60fps"
+    },
+    {
+        "category": "i-phone",
+        "imageUrl": "https://i5.walmartimages.com/asr/e3e6c73d-8590-41c7-8dc9-2782083e1cde_1.8cb438bbfdc33c72e365f9b291e72716.jpeg?odnWidth=undefined&odnHeight=undefined&odnBg=ffffff",
+        "price": 789.99,
+        "name": "iPhone 11 Pro, 64GB",
+        "summary": "Pro cameras. Pro display. Pro performance. Three cameras. Unlimited possibilities. ",
+        "description": "Pro cameras. Pro display. Pro performance. Three cameras. Unlimited possibilities. Three up your camera game. The most advanced iPhone yet. Upgrade to the best iPhone yet. Shoot amazing videos and photos with the Ultra Wide, Wide, and Telephoto cameras. Capture your best low-light photos with Night mode. Watch HDR movies and shows on the Super Retina XDR display?the brightest iPhone display yet. Experience unprecedented performance with A13 Bionic for gaming, augmented reality (AR), and photography. And get all-day battery life and a new level of water resistance. All in the first iPhone powerful enough to be called Pro.5.8-inch Super Retina XDR OLED display Water and dust resistant (4 meters for up to 30 minutes, IP68) Triple-camera system with 12MP Ultra Wide, Wide, and Telephoto cameras iOS 13 with Dark Mode, new tools for editing photos and video, and brand new privacy features"
+    },
+    {
+        "category": "i-phone",
+        "imageUrl": "https://i5.walmartimages.com/asr/eb5c97fe-bea0-43cd-a695-d6dcd59f14df_2.dd8d9aaa2f1ff829e5a2e4f9d268c486.jpeg?odnWidth=undefined&odnHeight=undefined&odnBg=ffffff",
+        "price": 399.99,
+        "name": "iPhone SE, 64GB",
+        "summary": "iPhone SE is the most powerful 4.7-inch iPhone ever.",
+        "description": "iPhone SE is the most powerful 4.7-inch iPhone ever.Featuring A13 Bionic, the fastest chip in a smartphone, for incredible performance in apps, games, and photography. Portrait mode for studio-quality portraits and six lighting effects. Next-generation Smart HDR for incredible detail across highlights and shadows. Cinematic-quality 4K video. And all the advanced features of iOS. With long battery life and water resistance, it's so much of the iPhone you love, in a not so big size.4.7-inch Retina HD displayWater and dust resistant (1 meter for up to 30 minutes, IP67)12MP Wide camera; Portrait mode, Portrait Lighting, Depth Control, next-generation Smart HDR, and 4K video7MP front camera with Portrait mode, Portrait Lighting, and Depth ControlTouch ID for secure authentication and Apple PayA13 Bionic chip with third-generation Neural EngineFast-charge capableWireless charging"
+    },
+    {
+        "category": "i-phone",
+        "imageUrl": "https://i5.walmartimages.com/asr/7bcc520e-2bfb-4ad6-a6b1-863349e24bc3_1.7ce0f921a93253b7e37f5ed875aa3914.jpeg?odnWidth=undefined&odnHeight=undefined&odnBg=ffffff",
+        "price": 199.99,
+        "name": "iPhone 7, 32GB",
+        "summary": "Water and dust resistant",
+        "description": "4.7-inch Retina HD display. Water and dust resistant. 12MP camera and 4K video at 30 fps. 7MP FaceTime HD camera with Retina Flash for stunning selfies. Touch ID for secure authentication and Apple Pay"
+    },    
+    {
+        "category": "Samsung",
+        "imageUrl": "https://i5.walmartimages.com/asr/ac0d68da-72c9-412b-9435-d1b18e635163.2f7a3d74b60dbd4f15891e38acebc483.jpeg?odnWidth=undefined&odnHeight=undefined&odnBg=ffffff",
+        "price": 969.99,
+        "name": "Samsung Galaxy S21+, 256GB",
+        "summary": "The Galaxy S21+ is the phone for business that lets you securely connect and collaborate anywhere. ",
+        "description": "Display: 6.7 inches Dynamic AMOLED 2X w/ Corning Gorilla Glass Victus, Resolution: 1080 x 2400 pixels. Memory: 256GB, 8GB RAM. Main Camera: (Triple) 64 MP + 12 MP + 12 MP w/ LED flash, auto-HDR, panorama -- Selfie Camera: 10 MP w/ Dual video call, Auto-HDR. Platform: OS - Android 11, One UI 3.1 -- Exynos 2100 -- Mali-G78 MP14 -- Octa-core (1x2.9 GHz Cortex-X1 & 3x2.80 GHz Cortex-A78 & 4x2.2 GHz Cortex-A55). Battery: Li-Ion 4800 mAh, non-removable - Fast charging 25W -- USB Power Delivery 3.0 -- Fast Qi/PMA wireless charging 15W -- Reverse wireless charging 4.5W. Dimensions: 6.36 x 2.98 x 0.31 in, Weight: 7.05 oz."
+    },    
+    {
+        "category": "Samsung",
+        "imageUrl": "https://i5.walmartimages.com/asr/ac0d68da-72c9-412b-9435-d1b18e635163.2f7a3d74b60dbd4f15891e38acebc483.jpeg?odnWidth=undefined&odnHeight=undefined&odnBg=ffffff",
+        "price": 839.99,
+        "name": "Samsung Galaxy S21+, 256GB",
+        "summary": "The Galaxy S21+ is the phone for business that lets you securely connect and collaborate anywhere.",
+        "description": "Display: 6.2 inches Dynamic AMOLED 2X w/ Corning Gorilla Glass Victus, Resolution: 1080 x 2400 pixels. Memory: 256GB, 8GB RAM. Main Camera: (Triple) 64 MP + 12 MP + 12 MP w/ LED flash, auto-HDR, panorama -- Selfie Camera: 10 MP w/ Dual video call, Auto-HDR. Platform: OS - Android 11, One UI 3.1 -- Exynos 2100 -- Mali-G78 MP14 -- Octa-core (1x2.9 GHz Cortex-X1 & 3x2.80 GHz Cortex-A78 & 4x2.2 GHz Cortex-A55). Battery: Li-Ion 4000 mAh, non-removable - Fast charging 25W -- USB Power Delivery 3.0 -- Fast Qi/PMA wireless charging 15W -- Reverse wireless charging 4.5W. Dimensions: 5.97 x 2.80 x 0.31 in, Weight: 5.96 oz"
+    },    
+    {
+        "category": "Samsung",
+        "imageUrl": "https://i5.walmartimages.com/asr/e0757ddb-77d7-4ddb-b792-62548477e884_1.1d91b9c9264426255fd02772ecdeb1ae.jpeg?odnWidth=undefined&odnHeight=undefined&odnBg=ffffff",
+        "price": 729.99,
+        "name": "Samsung Galaxy S9+, 64GB",
+        "summary": "The Camera. Reimagined. Enjoy the new Samsung Galaxy S9 Plus LTE Smartphone.",
+        "description": "6.2 inch Display. Dual aperture camera lens allows for brilliant photos, day or night. Radical 960 fps super slow-mo video. An emoji that's actually you. See more, hold less with the  Infinity Screen. Stereo speakers protuned by AKG wiith Dolby Atmos surround sound. Make a splash with a remarkable water-resistant smartphone. "
+    },    
+    {
+        "category": "Samsung",
+        "imageUrl": "https://i5.walmartimages.com/asr/e0757ddb-77d7-4ddb-b792-62548477e884_1.1d91b9c9264426255fd02772ecdeb1ae.jpeg?odnWidth=undefined&odnHeight=undefined&odnBg=ffffff",
+        "price": 399.99,
+        "name": "Samsung Galaxy S9, 64GB",
+        "summary": "The Camera. Reimagined. Enjoy the new Samsung Galaxy S9 LTE Smartphone.",
+        "description": "5.8 inch Display 1440 x 29660. 64 GB of Storage. 3000 mAh Battery. Dual aperture camera lens allows for brilliant photos, day or night. Radical 960 fps super slow-mo video. An emoji that's actually you. See more, hold less with the  Infinity Screen. Stereo speakers protuned by AKG wiith Dolby Atmos surround sound. Make a splash with a remarkable water-resistant smartphone."
+    },    
+    {
+        "category": "Samsung",
+        "imageUrl": "https://i5.walmartimages.com/asr/d8c44350-4ff2-4e31-b9f3-310d69672491_1.457fa2e293c14770084c723eaa76dee7.jpeg?odnWidth=612&odnHeight=612&odnBg=ffffff",
+        "price": 469.99,
+        "name": "Samsung Galaxy Note8, 64GB",
+        "summary": "Do Bigger Things - See the bigger picture and communicate in a whole new way. With the Galaxy Note8 in your hand, bigger things are just waiting to happen.",
+        "description": "Do Bigger Things - See the bigger picture and communicate in a whole new way. With the Galaxy Note8 in your hand, bigger things are just waiting to happen. More screen means more space to do great things. Go big with the Galaxy Note8's 6.3inch screen. It's the largest ever screen on a Note device and it still fits easily in your hand. Use the S Pen to express yourself in ways that make a difference. Draw your own emojis to show how you feel or write a message on a photo and send it as a handwritten note. Do things that matter with the S Pen. Get crisp photos even when it's dark and it's difficult to keep your phone steady. The Galaxy Note8's dual camera has a wide-angle camera that comes with the great low-light capabilities that you've come to expect from Galaxy phones, while the telephoto camera gives you 2x optical zoom for you to capture the near and far. Both have optical image stabilization so you get steady shots even when zoomed in."
+    },    
+    {
+        "category": "Samsung",
+        "imageUrl": "https://i5.walmartimages.com/asr/edb75f36-aa6f-4b36-bf09-51c003089baa.0558475f37ad4ce105b32ec2fd512093.jpeg?odnWidth=612&odnHeight=612&odnBg=ffffff",
+        "price": 889.99,
+        "name": "Samsung Galaxy A52, 128GB",
+        "summary": "Enjoy truly vibrant details with the Super AMOLED Display FHD +, reaching 800 nits for clarity, even in bright daylight. Eye comfort shield reduces blue light and the extra-fluid screen keeps your eyes relaxed, whether you're gaming or browsing.",
+        "description": "Display: 6.5 inches Super AMOLED w/ Corning Gorilla Glass 5 - Resolution: 1080 x 2400 pixels. Memory: 128GB 6GB RAM, MicroSD up to 1TB. Main Camera: (Quad) 64 MP + 12 MP + 5 MP + 5 MP w/ LED flash, panorama, HDR - Selfie Camera: 32 MP. Platform: Android - Qualcomm SM7125 Snapdragon 720G - Adreno 618 - Octa-core (2x2.3 GHz Kryo 465 Gold & 6x1.8 GHz Kryo 465 Silver). Battery: Li-Po 4500 mAh, non-removable. Dimensions: 6.30 x 2.96 x 0.33 in, Weight: 6.67 oz."
+    },    
+    {
+        "category": "Accessory",
+        "imageUrl": "https://i5.walmartimages.com/asr/46252790-1522-4260-ba4e-deba3d5ef5e4_1.c30f62bc479a8112e96fbfdb0ba0df5d.jpeg?odnWidth=undefined&odnHeight=undefined&odnBg=ffffff",
+        "price": 158.99,
+        "name": "HUAWEI FreeBuds 2 Pro Wireless Earphone",
+        "summary": "The HUAWEI FreeBuds 2 Pro wireless earphones support bone voice identification, smart voice control, double tap control, wireless charging, stereo high quality sound, IP54 waterproof, ergonomic design, comfortable to wear. It will create an auditory feast for you!",
+        "description": "BT: BT 5.0. BT Protocol: A2DP 1.3; hands-free profile (HFP) 1.6; AVRCP. Frequency: 20Hz-20,000Hz. Indicator: RGB LED. Charging Interface: Type C USB Port. Charging Case Battery: Minimum 410mAh, typical value 420mAh. Single Earphone Battery: Minimum 22mAh, typical value 25mAh. Call Time: about 2.5 hours. Standby Time: about 15 hours. Charging Time: about 1 hour."
+    },    
+    {
+        "category": "Accessory",
+        "imageUrl": "https://i5.walmartimages.com/asr/69af352e-2e64-432c-939e-728fb14f65c8_1.1dc78b14dbb039c66754ff2f60b9feb2.jpeg?odnWidth=612&odnHeight=612&odnBg=ffffff",
+        "price": 69.99,
+        "name": "COWIN E7 Pro Active Noise Cancelling Headphone",
+        "summary": "We present to you the 2018 Upgraded headphones we have to offer, the Cowin E7 PRO ANC Bluetooth Wireless Headphones.        ",
+        "description": "Impedance: 16Ω. S/N: ≥85dB. Frequency: 20Hz-20kHz. Power supply: Lithium battery or Micro USB cable. Audio source: iPhone, iPad, Samsung, Blackberry, Nexus, Smartphone, Computer, PC, Notebook, MP4, MP3, etc.. Function spec: Bluetooth, Microphone, AUX, Active Noise Cancelling."
+    },    
+    {
+        "category": "Accessory",
+        "imageUrl": "https://i5.walmartimages.com/asr/e9fa2180-070d-4933-8c85-dfb055d5a834.5f13208af0a84560ca3252d536b0a46a.jpeg?odnWidth=612&odnHeight=612&odnBg=ffffff",
+        "price": 52.99,
+        "name": "Wireless TWS Earphones for Galaxy S21/Ultra/Plus Phones",
+        "summary": "HD microphones are built-in for clear and uninterrupted calls, all the unnecessary and surrounding noises will be suppressed completely through our microphones. Our earbuds are designed for extreme comfort and a secure fit. ",
+        "description": "HD microphones are built-in for clear and uninterrupted calls, all the unnecessary and surrounding noises will be suppressed completely through our microphones. Our earbuds are designed for extreme comfort and a secure fit. We use the ergonomically designed with gel-flexible silicone earcaps to ensure your In-Ear Headphones fit comfortably to the ears, durable for long-term usage and won't cause any skin irritation under all circumstances. Hifi Stereo Sound with no latency, suitable for all kinds type of music. Auto Pairing. Once taking out of charging case, it will enter into pairing mode automatically. Lightweight, Secure fit and comfortable with whole day usage. Sweat and splash-proof design: track air are sweat and splash-proof up to IPX4.        "
+    },    
+    {
+        "category": "Accessory",
+        "imageUrl": "https://i5.walmartimages.com/asr/470a15ae-654b-4dcf-9992-4e63c1592acc.f924cb4724222ad9900239aba8b77a5f.jpeg?odnWidth=612&odnHeight=612&odnBg=ffffff",
+        "price": 28.95,
+        "name": "Air3 i500 Pro 1:1 Size TWS Bluetooth Earbuds",
+        "summary": "The Air3 i500 Pro TWS is the third generation of True Wireless Earbuds that comes in a 1:1 exact size.",
+        "description": "The Air3 i500 Pro TWS is the third generation of True Wireless Earbuds that comes in a 1:1 exact size. You can Name Change your Pro Pods as well as full iCloud Sync and GPS Location Services; You have full access to the Bluetooth menu. These may not be the real thing but they do perform at a high capacity compared to the real thing. They have a lot of the same features as the originals but not going to perform up to the same standard as the originals. With all that being said for the price you are paying these work great on phone calls, listening to music, watching videos or even exercising. TWS new generation."
+    },    
+    {
+        "category": "Accessory",
+        "imageUrl": "https://i5.walmartimages.com/asr/b351ae70-c4fa-4537-a70f-472631d5a75b.54db1eac9281c3b272e027467cdcadde.jpeg?odnWidth=undefined&odnHeight=undefined&odnBg=ffffff",
+        "price": 30.99,
+        "name": "Peroptimist Wireless Bluetooth Headphones",
+        "summary": "Providing customers with outstanding sound quality and satisfaction is our paramount goal.",
+        "description": "Providing customers with outstanding sound quality and satisfaction is our paramount goal. High definition stereo headphones together with advanced software and noise reduction technology are designed to reduce ambient noises. It is ideal for phone calls, music, and entertainment. Lose yourself in immersive music even in the lowest volume levels! Wireless Headphones are compatible with all Bluetooth or 3.5mm plug cable enabled devices such as iPhone, Smart Android phones, Tablet, Laptop, iPads, MP3/4 Player, Compuer and other Bluetooth devices. Just slide the on/off button and the headphones will be in ready to pair mode. It is built to provide a quick and stable Bluetooth connection and to enable hands-free communication through our special noise reduction technology. The super soft memory-protein ensuring lasting comfort and excellent durability. The foldable and stretchable design allows you to find the perfect fit without constraint. It also come with a protective Premium Case to reduce wear and tear. the best Choice for Travel, Sport and Every day use by people from all ages. High Definition Stereo Headphones provide superb music and voice clarity. It is also compatible music or TV (Bluetooth headhones) with rich low frequency and clear treble. It is ideal for audio lovers and gamers. Get started and become completely immersed in the music world! Headphones are Rechargeable. 450mAh battery, 14 hours of music time, hours Fast Charging. You have the freedom to switch between wired mode or wireless mode without interruption. You do not need to worry about power shortage problem for the long travel."
+    },    
+    {
+        "category": "Accessory",
+        "imageUrl": "https://i5.walmartimages.com/asr/c67bebef-646f-4cbb-9f06-432b491540cd_1.a85f65354949e93ab03dcb078a7d6495.jpeg?odnWidth=undefined&odnHeight=undefined&odnBg=ffffff",
+        "price": 197.99,
+        "name": "Apple AirPods Pro",
+        "summary": "Active Noise Cancellation for immersive sound. Transparency mode for hearing and connecting with the world around you. A more customizable fit for all-day comfort. Sweat and water resistant.",
+        "description": "Active Noise Cancellation for immersive sound. Transparency mode for hearing and connecting with the world around you. Three sizes of soft, tapered silicone tips for a customizable fit. Sweat and water resistant . Adaptive EQ automatically tunes music to the shape of your ear. Easy setup for all your Apple devices . Quick access to Siri by saying ?Hey Siri? The Wireless Charging Case delivers more than 24 hours of battery life."
+    }
+]

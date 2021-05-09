@@ -3,7 +3,7 @@ const express = require('express');
 const router = express.Router();
 const fs = require('fs');
 
-const data = require('../ta03data.json');
+const data = require('../data/ta03data.json');
 let tag = null;
 
 router.get('/',(req, res, next) => {

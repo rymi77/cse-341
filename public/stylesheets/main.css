@@ -82,3 +82,8 @@ label{
 .removeBook input{
   margin: 0 auto;
 }
+.container img{
+  width: 50%;
+  height: auto;
+  background-color: white;
+}
