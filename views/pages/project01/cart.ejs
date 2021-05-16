@@ -11,15 +11,13 @@
     <div class="containers">
       <h1><%= title %></h1>
       <%for (e of data){ %>
-        <div class="card">
-          <a href="/eCommerce/<%= e._id %>">
-            <h3><%= e.title %></h3>
-            <img src="<%= e.imageUrl %>">
-          </a>
-          <p>Price: $<%= e.price %></p>
-          <p>Summary: <%= e.summary %></p>
-          <a href="/eCommerce/add-cart/<%= e._id %>"><button>Add To Cart</button></a>
-        </div>
+        <form class="cart-card" action="/eCommerce/remove-cart" method="POST">
+          <p>Item ID: <%= e.productId %></p>
+          <p>Name: <%= e.title %></p>
+          <p>Price: <%= e.price %></p>
+          <input value="e._id" name="cartId" hidden>
+          <button type="submit">Remove</button>
+        </form>
       <% } %>
     </div>
   </div>

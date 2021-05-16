@@ -82,8 +82,41 @@ label{
 .removeBook input{
   margin: 0 auto;
 }
-.container img{
+.containers img{
   width: 50%;
   height: auto;
   background-color: white;
+}
+
+.project01form{
+  color: black;
+  text-align: left;
+}
+.project01form div{
+  margin: 1.5vw;
+}
+
+.card a{
+  color: white;
+}
+
+.cart-card{
+  text-align: right;
+  color: black;
+  background-color: white;
+  box-shadow: black;
+  width: 80%;
+  margin-left: 10%;
+}
+
+.cart-card p{
+  color: black;
+  margin: 10px;
+  text-align: left;
+}
+
+.cart-card button{
+  margin-top: 0%;
+  margin-bottom: 10px;
+  margin-right: 10px;
 }
