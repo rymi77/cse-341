@@ -1,12 +1,22 @@
-
 const express = require('express');
 const bodyParser = require('body-parser');
 const path = require('path');
 const cors = require('cors');
 const PORT = process.env.PORT || 5000 // So we can run on heroku || (OR) localhost:5000
 const mongoose = require('mongoose');
+const session = require('express-session');
+const MongoDBStore = require('connect-mongodb-session')(session);
+const csrf = require('csurf');
 
 const app = express();
+
+const MONGODB_URL = process.env.MONGODB_URL || 'mongodb+srv://Lycanius:testUser1@cluster0.sybh5.mongodb.net/myFirstDatabase';
+
+const store = new MongoDBStore({
+  uri: MONGODB_URL,
+  collection: 'sessions'
+});
+//const csrfProtection = csrf();
 
 // Route setup. You can implement more in the future!
 const ta01Routes = require('./routes/ta01');
@@ -31,8 +41,22 @@ const options = {
   family: 4
 };
 
-const MONGODB_URL = process.env.MONGODB_URL || 'mongodb+srv://Lycanius:testUser1@cluster0.sybh5.mongodb.net/myFirstDatabase?retryWrites=true&w=majority';
-                      
+app.use(
+  session({
+    secret: 'new secret', 
+    resave: false, 
+    saveUninitialized: false,
+    store: store
+  })
+);
+//app.use(csrfProtection);
+
+app.use((req, res, next) => {
+  res.locals.isAuth = req.session.isLoggedIn;
+  //res.locals.csrfToken = req.csrfToken();
+  next();
+});
+
 app.use(express.static(path.join(__dirname, 'public')))
    .set('views', path.join(__dirname, 'views'))
    .set('view engine', 'ejs')

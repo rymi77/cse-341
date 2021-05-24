@@ -4,22 +4,35 @@ const fs = require('fs');
 
 const productsControl = require('../control/product');
 const adminControl = require('../control/admin');
+const authControl = require('../control/auth');
+const isAuth = require('../middleware/is-auth');
 
-router.get('/admin-products', adminControl.adminProducts);
+router.get('/login', authControl.getLogin);
 
-router.post('/update-product', adminControl.postEditProduct);
+router.get('/signup', authControl.getSignUp);
 
-router.get('/add-product', adminControl.addProduct);
+router.post('/login', authControl.postLogin);
 
-router.post('/add-product', adminControl.postAddProduct);
+router.post('/signup', authControl.postSignup);
 
-router.get('/add-cart/:productId', productsControl.addCart);
+//router.post('/logout', authControl.postLogout);
 
-router.get('/update/:productId', adminControl.updateProduct);
 
-router.get('/get-cart', productsControl.getCart);
+router.get('/admin-products', isAuth, adminControl.adminProducts);
 
-router.post('/remove-cart', productsControl.removeCart);
+router.post('/update-product', isAuth, adminControl.postEditProduct);
+
+router.get('/add-product', isAuth, adminControl.addProduct);
+
+router.post('/add-product', isAuth, adminControl.postAddProduct);
+
+router.get('/update/:productId', isAuth, adminControl.updateProduct);
+
+router.get('/add-cart/:productId', isAuth, productsControl.addCart);
+
+router.get('/get-cart', isAuth, productsControl.getCart);
+
+router.post('/remove-cart', isAuth, productsControl.removeCart);
 
 router.get('/:productId', productsControl.getProduct);
 

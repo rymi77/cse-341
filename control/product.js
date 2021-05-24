@@ -9,9 +9,7 @@ exports.getProducts = (req, res, next) => {
             title: 'The Tech Comm', 
             path: '/home',
             data: products,
-            category : category,
-            activeTA03: true, // For HBS
-            contentCSS: true, // For HBS
+            category : category
         });
     });
 }
@@ -22,9 +20,8 @@ exports.getCart = (req, res, next) => {
             title: 'Your Cart', 
             path: '/cart',
             data: carts,
-            category : category,
-            activeTA03: true, // For HBS
-            contentCSS: true, // For HBS
+            user: req.session.user._id,
+            category : category
         });
     });
 }
@@ -48,9 +45,7 @@ exports.getProduct = (req, res, next) => {
             title: 'The Tech Comm', 
             path: '/home',
             data: product,
-            category : category,
-            activeTA03: true, // For HBS
-            contentCSS: true, // For HBS
+            category : category
         });
     });
 }
@@ -61,7 +56,8 @@ exports.addCart = (req, res, next) => {
         const cart = new Cart({
           productId: id,
           title: product.title,
-          price: product.price
+          price: product.price,
+          user: req.session.user._id
         });
         cart.save()
         .then(result => {
