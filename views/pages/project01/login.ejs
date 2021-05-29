@@ -9,6 +9,9 @@
 
   <div class="jumbotron text-center">
     <div class="containers">
+      <% if (errorMessage) { %>
+        <div class="error"><%= errorMessage %></div>
+      <% } %>
       <form class="project01form" action="/eCommerce/login" method="POST">
         <div>
             <label for="email">E-Mail</label>

@@ -8,6 +8,9 @@
   <% include ../../includes/project01nav.ejs %>
 <div class="jumbotron text-center">
   <div class="container">
+    <% if (errorMessage) { %>
+      <div class="error"><%= errorMessage %></div>
+    <% } %>
     <h1><%= title %></h1>
     <form class="project01form" action="/eCommerce/update-product" method="POST">
       <div>
@@ -16,7 +19,7 @@
       </div>
       <div>
         <label for="update-iPhone">iPhone:</label>
-        <input type="radio" id="update-iPhone" name="category" value="iPhone" <% if(data.category == 'iPhone'){ %> checked <% } %>>
+        <input type="radio" required id="update-iPhone" name="category" value="iPhone" <% if(data.category == 'iPhone'){ %> checked <% } %>>
         <label for="update-samsung">samsung:</label>
         <input type="radio" id="update-samsung" name="category" value="samsung" <% if(data.category == 'samsung'){ %> checked <% } %>>
         <label for="update-other">other:</label>
@@ -24,15 +27,15 @@
       </div>
       <div>
         <label for="title">Title:</label>
-        <input type="text" name="title" value="<%= data.title %>">
+        <input type="text" name="title" value="<%= data.title %>" required>
       </div>
       <div>
         <label for="imageUrl">Image Url:</label>
-        <input type="text" name="imageUrl" value="<%= data.imageUrl %>">
+        <input type="text" name="imageUrl" value="<%= data.imageUrl %>" required>
       </div>
       <div>
         <label for="price">Price:</label>
-        <input type="number" name="price" value="<%= data.price %>">
+        <input type="number" name="price" value="<%= data.price %>" required>
       </div>
       <div>
         <label for="summary">Summary:</label>

@@ -1,16 +1,18 @@
 const Product = require('../models/products');
+const { validationResult } = require('express-validator/check');
 
 exports.addProduct = (req, res, next) => {
   res.render('pages/project01/addProduct', { 
       title: 'Add Product', 
       path: '/addProduct',
-      activeTA03: true, // For HBS
-      contentCSS: true, // For HBS
+      errorMessage: null
   });
 }
 
 exports.adminProducts = (req, res, next) => {
-  Product.find().then(products => {
+  const email = req.session.user.email;
+  console.log(email);
+  Product.find({user: email}).then(products => {
       res.render('pages/project01/adminProducts', { 
           title: 'The Tech Comm', 
           path: '/adminProducts',
@@ -28,13 +30,22 @@ exports.updateProduct = (req, res, next) => {
         title: 'Update Product', 
         path: '/updateProduct',
         data: product,
-        activeTA03: true, // For HBS
-        contentCSS: true, // For HBS
+        errorMessage: null
     });
   });
 }
 
 exports.postAddProduct = (req, res, next) => {
+  const error = validationResult(req);
+
+  if (!error.isEmpty()) {
+    return res.status(422).render('pages/project01/addProduct', { 
+      title: 'Add Product', 
+      path: '/addProduct',
+      errorMessage: error.array()[0].msg,
+    });
+  }
+
   const featured = req.body.featured;
   const category = req.body.category;
   const title = req.body.title;
@@ -42,6 +53,7 @@ exports.postAddProduct = (req, res, next) => {
   const price = req.body.price;
   const summary = req.body.summary;
   const description = req.body.description;
+  const user = req.session.user.email;
   const product = new Product({
     featured: featured,
     category: category,
@@ -49,7 +61,8 @@ exports.postAddProduct = (req, res, next) => {
     imageUrl: imageUrl,
     price: price,
     summary: summary,
-    description: description
+    description: description,
+    user: user
   });
   product.save()
   .then(result => {
@@ -62,7 +75,19 @@ exports.postAddProduct = (req, res, next) => {
 }
 
 exports.postEditProduct = (req, res, next) => {
-  id = req.body.id;
+  const id = req.body.id;
+  const error = validationResult(req);
+
+  if (!error.isEmpty()) {
+    return Product.findById(id).then(product => {
+      res.status(422).render('pages/project01/updateProduct', { 
+          title: 'Update Product', 
+          path: '/updateProduct',
+          data: product,
+          errorMessage: null
+      });
+    });
+  }
   const featured = req.body.featured;
   const category = req.body.category;
   const title = req.body.title;

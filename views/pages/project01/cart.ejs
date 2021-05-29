@@ -16,7 +16,7 @@
             <p>Item ID: <%= e.productId %></p>
             <p>Name: <%= e.title %></p>
             <p>Price: <%= e.price %></p>
-            <input value="e._id" name="cartId" hidden>
+            <input value="<%= e._id %>" name="cartId" hidden>
             <button type="submit">Remove</button>
           </form>
         <% } %>

@@ -4,6 +4,15 @@
         <li class="<%= path === '/eCommerce' ? 'active' : ''%>">
           <a href="/eCommerce"><span class="glyphicon glyphicon-home"></span> Home</a>
         </li>
+        <li class="<%= path === '/eCommerce/iPhone' ? 'active' : ''%>">
+          <a href="/eCommerce/iPhone">iPhones</a>
+        </li>
+        <li class="<%= path === '/eCommerce/samsung' ? 'active' : ''%>">
+          <a href="/eCommerce/samsung">Samsungs</a>
+        </li>
+        <li class="<%= path === '/eCommerce/other' ? 'active' : ''%>">
+          <a href="/eCommerce/other">Other</a>
+        </li>
         <%if(isAuth){ %>
           <li class="<%= path === '/eCommerce/add-product' ? 'active' : ''%>">
             <a href="/eCommerce/add-product">Add Product</a>
@@ -14,13 +23,17 @@
           <li class="<%= path === '/eCommerce/get-cart' ? 'active' : ''%>">
             <a href="/eCommerce/get-cart">Cart</a>
           </li>
-        <% } %>
-        <li class="<%= path === '/eCommerce/login' ? 'active' : ''%>">
-          <a href="/eCommerce/login">Login</a>
-        </li>
-        <li class="<%= path === '/eCommerce/signup' ? 'active' : ''%>">
-          <a href="/eCommerce/signup">Sign Up</a>
-        </li>
+          <li class="<%= path === '/eCommerce/logout' ? 'active' : ''%>">
+            <a href="/eCommerce/logout">Logout</a>
+          </li>
+        <% } else {%>
+          <li class="<%= path === '/eCommerce/login' ? 'active' : ''%>">
+            <a href="/eCommerce/login">Login</a>
+          </li>
+          <li class="<%= path === '/eCommerce/signup' ? 'active' : ''%>">
+            <a href="/eCommerce/signup">Sign Up</a>
+          </li>
+          <% }%>
       </ul>
     </div>
   </nav>

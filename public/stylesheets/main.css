@@ -16,7 +16,11 @@
 .jumbotron p {
   color: #d9ccee;
   max-width: 75%;
-  margin: 1em auto 2em; 
+  margin: 0em auto 0em; 
+}
+
+.jumbotron button{
+  margin: 0em auto 2em; 
 }
   
 .navbar + .jumbotron {
@@ -119,4 +123,26 @@ label{
   margin-top: 0%;
   margin-bottom: 10px;
   margin-right: 10px;
+}
+
+.addButton{
+  color: black;
+  width: 20%;
+  height: 40px;
+}
+.container p{
+  margin: 0px;
+  padding: 0px;
+}
+
+.error{
+  margin: auto;
+  width: 50%;
+  height: 70px;
+  padding-top: 10px;
+  border-style: solid;
+}
+
+.shopLink{
+  color: #b487fc;
 }
