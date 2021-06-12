@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <% include ../includes/header.ejs %>
+</head>
+
+<body>
+  <% include ../includes/nav.ejs %>
+<div class="jumbotron text-center">
+  <div class="prove08">
+    <h1><%= title %></h1>
+    <%for (e of data){ %>
+      <% let found = false; if(tag){ %>
+        <% for (t of e.tags) { %>
+          <% if (t == tag) {found = true} } }%>
+          <% if (!tag || found) {%>
+          <div class="card">
+            <h3><%= e.name %></h3>
+            <img src="<%= e.imageUrl %>">
+            <p>Price: $<%= e.price %></p>
+            <p>Description: <%= e.description %></p>
+          </div>
+          <% } %>
+    <% } %>
+  </div>
+  <div class="pagination">
+    <% if(currentPage != 1 && prevPage != 1){ %>
+      <a href="/prove08/?page=1">1</a>
+    <% } %>
+    <% if(hasPrev){ %>
+      <a href="/prove08/?page=<%= prevPage %>"><%= prevPage %></a>
+    <% } %>
+    <a href="/prove08/?page=<%= currentPage %>" class="active"><%= currentPage %></a>
+    <% if(hasNext){ %>
+      <a href="/prove08/?page=<%= nextPage %>"><%= nextPage %></a>
+    <% } %>
+    <% if(lastPage != currentPage && nextPage != lastPage){ %>
+      <a href="/prove08/?page=<%= lastPage %>"><%= lastPage %></a>
+    <% } %>
+  </div>
+</div>
+
+
+
+</body>
+</html>

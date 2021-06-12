@@ -25,6 +25,7 @@ const ta03Routes = require('./routes/ta03');
 const ta04Routes = require('./routes/ta04'); 
 const prove01Routes = require('./routes/prove01');
 const prove02Routes = require('./routes/prove02');
+const prove08Routes = require('./routes/prove08');
 const shopRoutes = require('./routes/eCommerce');
 
 const corsOptions = {
@@ -68,6 +69,7 @@ app.use(express.static(path.join(__dirname, 'public')))
    .use('/ta04', ta04Routes)
    .use('/prove01', prove01Routes)
    .use('/prove02', prove02Routes)
+   .use('/prove08', prove08Routes)
    .use('/eCommerce', shopRoutes)
    .get('/', (req, res, next) => {
      // This is the primary index, always handled last. 
