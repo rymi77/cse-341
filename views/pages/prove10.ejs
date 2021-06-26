@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <% include ../includes/header.ejs %>
+</head>
+
+<body>
+  <% include ../includes/nav.ejs %>
+<div class="jumbotron text-center">
+  <div class="container">
+    <h1><%= title %></h1>
+    <p>Please fill out the form below</p>
+    <ul class="pove10List"></ul>
+    <form class="ponder01form">
+        <div>
+            <label for="name">Superhero Name:</label>
+            <input type="text" name="name" id="newName">
+        </div>
+        <div>
+            <button id="submitName" onclick="submitName()">Submit</button>
+        </div>
+    </form>
+  </div>
+</div>
+</body>
+<script src="../../client/prove10client.js"></script>
+</html>

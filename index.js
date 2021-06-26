@@ -27,6 +27,7 @@ const prove01Routes = require('./routes/prove01');
 const prove02Routes = require('./routes/prove02');
 const prove08Routes = require('./routes/prove08');
 const prove09Routes = require('./routes/prove09');
+const prove10Routes = require('./routes/prove10');
 const shopRoutes = require('./routes/eCommerce');
 
 const corsOptions = {
@@ -64,6 +65,7 @@ app.use(express.static(path.join(__dirname, 'public')))
    .set('view engine', 'ejs')
 
    .use(bodyParser({extended: false})) // For parsing the body of a POST
+   .use(bodyParser.json())
    .use('/ta01', ta01Routes)
    .use('/ta02', ta02Routes) 
    .use('/ta03', ta03Routes) 
@@ -72,6 +74,7 @@ app.use(express.static(path.join(__dirname, 'public')))
    .use('/prove02', prove02Routes)
    .use('/prove08', prove08Routes)
    .use('/prove09', prove09Routes)
+   .use('/prove10', prove10Routes)
    .use('/eCommerce', shopRoutes)
    .get('/', (req, res, next) => {
      // This is the primary index, always handled last. 
