@@ -4,7 +4,7 @@ const socket = io();
 
 // Repopulate the list when the server broadcasts an event
 socket.on('update-list', () => {
-  populateList();
+  getList();
 });
 
 const getList = () => {
