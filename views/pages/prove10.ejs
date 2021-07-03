@@ -9,19 +9,21 @@
 <div class="jumbotron text-center">
   <div class="container">
     <h1><%= title %></h1>
-    <p>Please fill out the form below</p>
-    <ul class="pove10List"></ul>
+    <ul id="superList">
+    </ul>
+    <p><br>Please fill out the form below to add a name</p>
     <form class="ponder01form">
         <div>
             <label for="name">Superhero Name:</label>
             <input type="text" name="name" id="newName">
         </div>
         <div>
-            <button id="submitName" onclick="submitName()">Submit</button>
+            <button id="submitName">Submit</button>
         </div>
     </form>
   </div>
 </div>
+<script src="/socket.io/socket.io.js"></script>
+<script src="../scripts/prove10client.js"></script>
 </body>
-<script src="../../client/prove10client.js"></script>
 </html>

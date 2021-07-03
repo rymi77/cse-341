@@ -1,11 +1,21 @@
-const getList = () => {
-    const superList = document.getElementById('prove10List');
+  
+// Initialize socket.io
+const socket = io();
 
-    fetch('../routes/prove10/fetchAll')
+// Repopulate the list when the server broadcasts an event
+socket.on('update-list', () => {
+  populateList();
+});
+
+const getList = () => {
+    const nameList = document.getElementById('superList');
+
+    fetch('/prove10/fetchAll')
         .then(res => res.json())
         .then(data => {
-            while(superList.firstChild){
-                superList.firstChild.remove()
+            console.log(data);
+            while(nameList.firstChild){
+                nameList.firstChild.remove()
             }
             for (const avenger of data.avengers) {
                 const li = document.createElement('li')
@@ -16,13 +26,13 @@ const getList = () => {
         .catch(err => {
             console.error(err)
         })
-
 }
 
 const submitName = () => {
-    const newName = document.getElementById('newName').value // Grab the value of our new name
+    console.log('made it');
+    const newName = document.getElementById('newName').value; // Grab the value of our new name
 
-    fetch('/proveAssignments/10/insertName', {
+    fetch('/prove10/insert', {
         method: 'POST', // Send a POST request
         headers: {
             // Set the Content-Type, since our server expects JSON
@@ -32,16 +42,19 @@ const submitName = () => {
     })
         .then(res => {
             // Clear the input
-            document.getElementById('newName').value = ''
+            document.getElementById('newName').value = '';
 
             // Repopulate the list with our new name added
-            populateList()
+            getList();
+
+            socket.emit('newName');
         })
         .catch(err => {
             // Clear the input
-            document.getElementById('newName').value = ''
-            console.error(err)
+            document.getElementById('newName').value = '';
+            window.alert(err);
         })
 }
 
-getList()
+getList();
+document.getElementById("submitName").onclick = submitName;

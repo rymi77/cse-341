@@ -7,7 +7,7 @@ const dummyData = require('../data/ta10-data.json')
 router.get('/', (req, res, next) => {
     res.render('pages/prove10', {
         title: 'Prove 10',
-        path: '/prove10',
+        path: '/prove10'
     });
 });
 
@@ -16,6 +16,7 @@ router.get('/fetchAll', (req, res, next) => {
 });
 
 router.post('/insert', (req, res, next) => {
+    console.log('here')
     if (req.body.newName !== undefined) {
         const newName = req.body.newName
 

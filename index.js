@@ -91,7 +91,11 @@ mongoose
     'mongodb+srv://Lycanius:testUser1@cluster0.sybh5.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
   )
   .then(result => {
-    app.listen(PORT);
+    const server = app.listen(PORT);
+    const io = require('socket.io')(server);
+    io.on('connection', (socket) => {
+      console.log('a user connected');
+    });
   })
   .catch(err => {
     console.log(err);
