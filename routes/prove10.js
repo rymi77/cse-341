@@ -6,7 +6,7 @@ const dummyData = require('../data/ta10-data.json')
 
 router.get('/', (req, res, next) => {
     res.render('pages/prove10', {
-        title: 'Prove 10',
+        title: 'Prove 10/11',
         path: '/prove10'
     });
 });
