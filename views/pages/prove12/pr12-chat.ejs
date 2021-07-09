@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <% include ../../includes/header.ejs %>
+</head>
+
+<body>
+    <% include ../../includes/nav.ejs %>
+    <div class="container">
+        <h1>Live chat:</h1>
+        <ul id="chatBox" class="chat">
+        </ul>
+    </div>
+    <% if (user) { %>
+    <div class="input">
+        <p class="displayname"><%= user %></p>
+        <textarea name="message" id="message"></textarea>
+        <button onclick="postMessage()">Send</button>
+        <input type="hidden" value="<%= user %>" name="user" id="user">
+    </div>
+    <% } else { %>
+    <p>No login, view only.</p>
+    <% } %>
+</body>
+
+</html>
+<script src="/socket.io/socket.io.js"></script>
+<script src="../scripts/pr12-chat.js"></script>
